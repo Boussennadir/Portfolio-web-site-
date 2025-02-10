@@ -2,25 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="master.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
+  <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("SeB9NKDQlhV6Ug-hR"); // Replace with your EmailJS User ID
+      })();
+    </script>
+    <script src="ms.js"></script>
   <body>
     <nav>
       <h1 class="headT">Portfolio</h1>
       <ul class="nav-links">
-        <li><a href="">Home</a></li>
-        <li><a href="">Skills</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#skils">Skills</a></li>
         <li><a href="">Project</a></li>
         <li><a href="">Contact</a></li>
       </ul>
     </nav>
 
-    <section class="main">
+    <section id="first" class="main">
       <div class="box">
         <p class="pppp">
           <br />
@@ -50,8 +60,8 @@
         ></a>
       </div>
     </section>
-    <section class="skills">
-      <h1 class="Skils">Skills</h1>
+    <section id="secend" class="skills">
+      <h1 id="skils" class="Skils">Skills</h1>
       <div class="logos">
         <figure>
           <img src="html.svg" alt="HTML" />
@@ -60,27 +70,22 @@
         <figure>
           <img src="css.svg" alt="CSS" />
           <figcaption>Css</figcaption>
-
         </figure>
         <figure>
           <img src="C.svg" alt="C" />
           <figcaption>C</figcaption>
-
         </figure>
         <figure>
           <img src="Java.png" alt="Java" />
           <figcaption>Java</figcaption>
-
         </figure>
         <figure>
           <img src="Python.svg" alt="Python" />
           <figcaption>Python</figcaption>
-
         </figure>
         <figure>
           <img src="Kotlin.png" alt="Kotlin" />
           <figcaption>Kotlin</figcaption>
-
         </figure>
         <figure>
           <img src="Jetpack_Compose.svg" alt="Jetpack Compose" />
@@ -90,16 +95,24 @@
     </section>
     <section class="projects">
       <h1>Projects</h1>
-      <div>
+      <div class="projectImg">
         <img src="project1.png" alt="Project 1" />
         <img src="project2.png" alt="Project 2" />
       </div>
     </section>
+
+    <footer class="Contact-continer">
+      <h1>Contact <span>Me</span></h1>
+      <form id="contact-form" class="Contact" action="">
+        <div class="input"> 
+         <input id="name" class="name" required type="text" placeholder="Full Name" />
+         <input id="phone" class="tel" type="tel" required placeholder="Phone" />
+         <input id="email" class="email" type="email" required placeholder="Email" />
+        </div>
+        <textarea id="message" required placeholder="Message"></textarea>
+        <button type="submit" onclick="sendMail()">Send Message</button>
+      </form>
+      <p>&copy; 2025 Boussentoh Mohamed Nadir</p>
+    </footer>
   </body>
 </html>
-<!-- <label class="burger" for="burger">
-        <input type="checkbox" id="burger" />
-        <span></span>
-        <span></span>
-        <span></span>
-      </label> -->
