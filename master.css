@@ -1,0 +1,143 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;    
+}
+body{
+    background-color: #191B20;
+    color: #CDCABB;
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    vertical-align: auto;
+}
+.headT{
+    color: #379AFF;
+}
+a{
+    color: #CDCABB;
+}
+
+nav a:hover,nav a:active{
+    border-bottom: #379AFF 5px solid;
+    color: #379AFF;
+    background-attachment: fixed;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.social a{
+    color: #CDCABB;
+}
+.social a:hover{
+    color: #379AFF;
+}
+.Name{
+    font-size: 2rem;
+    padding-left: 0.5rem;
+    margin: 0.5rem;
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+    color: #379AFF;
+}
+.pPort{
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: #191B20;
+    border: 1px solid #CDCABB;
+    width: 65%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.box {
+    display: flex; /* Allows image and text to be in the same line */
+    align-items: center; /* Aligns items vertically */
+    gap: 4rem; /* Adds spacing between text and image */
+}
+.about{
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pppp{
+    padding-left: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #191B20;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Pushes "Portfolio" left and links right */
+    align-items: center;
+    padding: 0.2rem;
+    z-index: 100;
+}
+
+.nav-links {
+    position: absolute;
+    display: flex; /* Change to flex for proper layout */
+    list-style: none;
+    right: 1rem;
+    gap: 0.9rem; /* Adds space between links */
+}
+
+.nav-links a {
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.main{
+    position: relative;
+}
+
+.main img{
+    width: 35%;
+    height: auto;
+    border-radius: 50%;
+}
+.Skils{
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+.logos{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    justify-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+.skill img {
+    width: 20%; /* Adjust size as needed */
+    height: auto;
+    padding-right: 1rem ;
+    margin: auto;
+
+}
